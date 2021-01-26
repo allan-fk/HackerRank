@@ -1,3 +1,4 @@
+// https://www.hackerrank.com/challenges/bon-appetit/problem
 const bill = [3, 10, 2, 9]
 const k = 1
 const b = 12
@@ -10,12 +11,10 @@ function bonAppetit(bill, k, b) {
     }
   });
   if (totalCost / 2 == b)
-    return 'Bon appetit'
+    console.log('Bon Appetit')
   else if (totalCost / 2 > b)
-    return (totalCost / 2) - b
-  else return b - (totalCost / 2)
+    console.log((totalCost / 2) - b)
+  else console.log(b - (totalCost / 2))
 }
 
-console.log(
-  bonAppetit(bill, k, b)
-) 
+bonAppetit(bill, k, b)
