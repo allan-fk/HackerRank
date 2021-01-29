@@ -3,14 +3,14 @@
 const n = 6
 const p = 5
 
-function pageCount(numberOfPages, pageToGo) {
-  const diffFromLastPage = numberOfPages - pageToGo
+function pageCount(lastPage, pageToGo) {
+  const diffFromLastPage = lastPage - pageToGo
 
-  if (diffFromLastPage < pageToGo) {
-    if (numberOfPages % 2 == 0 && diffFromLastPage == 1) return 1 
-    else Math.floor(diffFromLastPage / 2)
-  } else  return Math.floor(pageToGo / 2)
-
+  if (diffFromLastPage < pageToGo)
+    return (lastPage % 2 == 0 && diffFromLastPage == 1) 
+    ? 1 
+    : Math.floor(diffFromLastPage / 2)
+  else return Math.floor(pageToGo / 2)
 }
 
 console.log(
