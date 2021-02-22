@@ -5,6 +5,7 @@ const n = 4
 function saveThePrisoner(n) {
 }
 
+
 console.log(
   saveThePrisoner(n)
 )
