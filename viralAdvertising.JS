@@ -1,13 +1,21 @@
-// https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem
+// https://www.hackerrank.com/challenges/strange-advertising/problem
 
-const start = 13
-const end = 45
-const divid = 3
+const n = 4
 
-function viralAdvertising(start, end, divid) {
- 
+function viralAdvertising(days) {
+  let likes = 2
+  let shared = 5
+  let totalLikes = 0 
+
+  for (let day = 0; day < days; day++) {
+    likes =  Math.floor(shared/2)
+    shared = likes * 3
+    totalLikes += likes
+  }
+
+  return totalLikes
 }
 
 console.log(
-  viralAdvertising(start, end, divid)
+  viralAdvertising(n)
 )
