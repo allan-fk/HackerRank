@@ -8,7 +8,6 @@ function viralAdvertising(start, end, divid) {
  
 }
 
-
 console.log(
   viralAdvertising(start, end, divid)
 )
