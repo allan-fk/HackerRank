@@ -1,11 +1,14 @@
-// https://www.hackerrank.com/challenges/strange-advertising/problem
+// https://www.hackerrank.com/challenges/save-the-prisoner/problem
 
-const n = 4
+const prisoners = 7 
+const sweets = 19
+const start = 2
 
-function saveThePrisoner(n) {
+function saveThePrisoner(prisoners, sweets, start) {
+  return (sweets-1 + start) % prisoners || prisoners;
 }
 
 
 console.log(
-  saveThePrisoner(n)
+  saveThePrisoner(prisoners, sweets, start)
 )
