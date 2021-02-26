@@ -1,14 +1,14 @@
 // https://www.hackerrank.com/challenges/circular-array-rotation/problem
 
-const prisoners = 7 
-const sweets = 19
-const start = 2
+const array = [3, 4, 5]
+const nbrOfRotations = 2
+const queries = [0, 1, 2]
 
-function circularArrayRotation(a, k, queries) {
-
-
+function circularArrayRotation(array, nbrOfRotations, queries) {
+  for (let i = 1; i <= nbrOfRotations; i++) array.unshift(array.pop());
+  return queries.map(e => (array[e]))
 }
 
 console.log(
-  circularArrayRotation(a, k, queries)
+  circularArrayRotation(array, nbrOfRotations, queries)
 )
