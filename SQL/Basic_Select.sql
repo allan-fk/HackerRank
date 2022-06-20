@@ -80,3 +80,14 @@ LIMIT 1;
 SELECT CITY, length(CITY) LengthCity
 FROM STATION order by LengthCity DESC, CITY ASC 
 LIMIT 1;
+
+
+
+
+/*----------------------------------------------------------------------------*/
+
+-- Weather Observation Station 6
+
+/* Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates. */
+
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP "^[aeiou].*"
